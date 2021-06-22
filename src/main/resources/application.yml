@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: food-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/food
+    username: root
+    password: password
+flyway:
+  url: jdbc:postgresql://localhost:5432/food
+  user: root
+  password: password
