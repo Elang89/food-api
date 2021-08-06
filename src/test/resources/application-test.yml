@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver
+    url: jdbc:tc:postgresql://localhost:5433/food?user=root&password=password
+  http:
+    converters:
+      preferred-json-mapper: gson
+  jpa:
+    database-platform: postgres
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL95Dialect
+  flyway:
+    url: jdbc:tc:postgresql://localhost:5433/food
+    user: root
+    password: password
+    locations: classpath:db/migration
