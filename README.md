@@ -9,7 +9,8 @@ create personal recipes.
 ## Requirements
 
 1. Docker
-2. Java 11
+2. Java 11 Adopt OpenJDK
+3. Docker Compose
 
 ## How to run this app
 
