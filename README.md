@@ -68,4 +68,4 @@ To run the application tests use the following instructions:
 
 To access Open API docs please go to the following route:
 
-*http://localhost:3000/swagger-ui*
+*http://localhost:3000/api/swagger-ui*
