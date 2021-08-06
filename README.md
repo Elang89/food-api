@@ -62,7 +62,7 @@ The app will run on a url like this: http://host:port-number, (i.e http://localh
 
 To run the application tests use the following instructions:
 
-1. run ./mvnw  
+1. run ./mvnw clean test
 
 ## How to access Open API docs
 
