@@ -13,8 +13,10 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQL95Dialect
-  server:
-    port: ${env.APP_PORT}
+server:
+  port: ${env.APP_PORT}
+  servlet:
+    contextPath: /api
 
 flyway:
   url: jdbc:postgresql://${env.PG_HOST}:${env.PG_PORT}/${env.PG_DATABASE}

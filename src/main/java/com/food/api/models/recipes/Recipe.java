@@ -67,9 +67,10 @@ public class Recipe {
 		this.updatedAt = LocalDateTime.now();
 	}
 
-	public Recipe(String name) {
+	public Recipe(String name, Set<Ingredient> ingredients) {
 		this.id = UUID.randomUUID();
 		this.name = name;
+		this.ingredients = ingredients;
 	}
 
 }

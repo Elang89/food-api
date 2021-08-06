@@ -1,5 +1,14 @@
 package com.food.api.models.recipes;
 
-public class RecipeResponse {
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
+public class RecipeResponse {
+	@Getter
+	private Recipe recipe;
+
+	public RecipeResponse(Recipe recipe) {
+		this.recipe = recipe;
+	}
 }

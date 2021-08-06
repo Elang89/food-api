@@ -1,5 +1,16 @@
 package com.food.api.models.recipes;
 
-public class UpdateRecipeRequest {
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
+@NoArgsConstructor
+public class UpdateRecipeRequest {
+	@Getter
+	private UpdateRecipe updateRecipe;
+
+
+	public UpdateRecipeRequest(UpdateRecipe updateRecipe) {
+		this.updateRecipe = updateRecipe;
+	}
 }
+
